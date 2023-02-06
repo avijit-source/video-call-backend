@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 const io = require("socket.io")(server, {
     pingTimeout: 60000,
     cors: {
-        origin: "https://videocall9806.netlify.app/",
+        origin: "https://videocall9806.netlify.app",
     },
     maxHttpBufferSize: 1e8
 });
