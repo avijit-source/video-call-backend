@@ -38,10 +38,9 @@ app.get("/", (req, res) => {
 const io = require("socket.io")(server, {
     pingTimeout: 60000,
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://videocall9806.netlify.app/",
     },
     maxHttpBufferSize: 1e8
-
 });
 
 io.on("connection", (socket) => {
